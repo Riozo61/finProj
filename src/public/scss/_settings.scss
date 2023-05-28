@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background);
+  font: 400 16px/24px TT-Lakes Regular, sans-serif;
+  color: var(--black);
+}
+
+/*ШРИФТЫ*/
+.small-font {
+  font-size: 12px;
+}
+.medium-font {
+  font-size: 14px;
+}
+.biggest-font {
+  font-size: 16px;
+}
+
+/*ПОВТОРЯЮЩИЕСЯ ЭЛЕМЕНТЫ*/
+.red-arrow {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--pink);
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.svg {
+  width: 40px;
+  height:40px;
+}
+.button {
+  border: none;
+  background-color: inherit;
+}
+.link {
+  text-decoration: none;
+  color: var(--black);
+}
+/*разделители на главы*/
+.chapter {
+  background: linear-gradient(270deg, var(--white) 0%, var(--background) 98.61%);
+  border-top: 1px solid var(--light-turquoise);
+  color: var(--grey);
+  word-spacing: 0.3px;
+  padding: 15px 0 18px 33px;
+}
+/*кнопки с иконкой стрелки*/
+.icon-text {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 32px;
+}
+.icon-text svg {
+  margin-right: 10px;
+}
+
+/*HOVER*/
+.link:hover {
+  cursor: pointer;
+  color: var(--pink);
+  transform: scale(1.01);
+}
+.svg:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+.red-arrow:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+/*SWIPER*/
+.mobile-swiper {
+  display: none;
+}

@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  right: 0;
+  width: 440px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+
+  .modal-container {
+    position: relative;
+
+  }
+  .modal__title {
+    margin-top: 40px;
+    padding-left: 30px;
+    border-left: 3px solid var(--turquoise);
+  }
+  .modal__inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 24px 32px 0 32px;
+    & input, textarea {
+      padding: 12px 0 12px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--light-gray);
+    }
+  }
+  .privacy {
+    margin: 24px 32px 0 32px;
+  }
+  .btn-send {
+    position: absolute;
+    right: 0;
+    margin: 20px 32px 0 32px;
+  }
+  .modal__close-button {
+    position: fixed;
+    right: 472px;
+    top: 32px;
+  }
+}

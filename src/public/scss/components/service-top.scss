@@ -1,0 +1,22 @@
+.service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .service__title {
+    font: 700 28px/43px TT-Lakes Bold, sans-serif;
+    padding-left: 31px;
+    border-left: 4px var(--turquoise) solid;
+    word-spacing: -3px;
+  }
+  .service-buttons {
+    display: flex;
+    align-items: center;
+    &__text {
+      margin-right: 8px;
+    }
+    &__icon {
+      margin-right: 32px;
+    }
+  }
+}

@@ -1,29 +1,211 @@
 @charset "UTF-8";
-:root {
-  --white: #FFFFFF;
-  --black: #1B1C21;
-  --grey: #7E7E82;
-  --light-gray: #EAEAEA;
-  --pink: #FF3E79;
-  --turquoise: #41F6D7;
-  --light-turquoise: #B8FFEC;
-  --background: #F8F8F8; }
+/*TT-Lakes Regular*/
+@import url(../normalize.css);
 
 @font-face {
-  font-family: 'TT-Lakes Regular';
-  src: url("../fonts/TTLakes-Regular.ttf"); }
+    font-family: 'TT-Lakes Regular';
+    src: url("../fonts/TTLakes-Regular.ttf");
+}
 
 /*TT-Lakes Bold*/
 @font-face {
-  font-family: 'TT-Lakes Bold';
-  src: url("../fonts/TTLakes-Bold.ttf"); }
+    font-family: 'TT-Lakes Bold';
+    src: url("../fonts/TTLakes-Bold.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font: 400 16px/24px TT-Lakes Regular, sans-serif;
+    color: var(--black);
+}
 
 /*ШРИФТЫ*/
 .small-font {
-  font-size: 12px; }
+    font-size: 12px;
+}
 
 .medium-font {
-  font-size: 14px; }
+    font-size: 14px;
+}
 
 .biggest-font {
-  font-size: 16px; }
+    font-size: 16px;
+}
+
+/*ПОВТОРЯЮЩИЕСЯ ЭЛЕМЕНТЫ*/
+.red-arrow {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--pink);
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.svg {
+    width: 40px;
+    height: 40px;
+}
+
+.button {
+    border: none;
+    background-color: inherit;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/*разделители на главы*/
+.chapter {
+    background: linear-gradient(270deg, var(--white) 0%, var(--background) 98.61%);
+    border-top: 1px solid var(--light-turquoise);
+    color: var(--grey);
+    word-spacing: 0.3px;
+    padding: 15px 0 18px 33px;
+}
+
+/*кнопки с иконкой стрелки*/
+.icon-text {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 32px;
+}
+
+.icon-text svg {
+    margin-right: 10px;
+}
+
+/*HOVER*/
+.link:hover {
+    cursor: pointer;
+    color: var(--pink);
+    transform: scale(1.01);
+}
+
+.svg:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.red-arrow:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+/*SWIPER*/
+.mobile-swiper {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    right: 0;
+    width: 440px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+}
+
+.modal .modal-container {
+    position: relative;
+}
+
+.modal .modal__title {
+    margin-top: 40px;
+    padding-left: 30px;
+    border-left: 3px solid var(--turquoise);
+}
+
+.modal .modal__inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 24px 32px 0 32px;
+}
+
+.modal .modal__inputs input, .modal .modal__inputs textarea {
+    padding: 12px 0 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+}
+
+.modal .privacy {
+    margin: 24px 32px 0 32px;
+}
+
+.modal .btn-send {
+    position: absolute;
+    right: 0;
+    margin: 20px 32px 0 32px;
+}
+
+.modal .modal__close-button {
+    position: fixed;
+    right: 472px;
+    top: 32px;
+}
+
+.sidebar {
+    background-color: var(--white);
+    height: 100%;
+}
+
+.sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    padding-top: 29px;
+}
+
+.sidebar__nav__item {
+    padding-left: 23px;
+    margin-bottom: 25px;
+}
+
+.sidebar__nav__item_current {
+    border-left: 4px var(--turquoise) solid;
+    color: var(--grey);
+    padding-left: 18px;
+    margin-bottom: 25px;
+}
+
+.sidebar__contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 22px 0 0 20px;
+}
+
+.sidebar__contacts .sidebar-cont__num {
+    font: 700 24px/32px TT-Lakes Bold, sans-serif;
+    letter-spacing: -0.6px;
+    padding-top: 10px;
+}
+
+.sidebar__languages {
+    margin: 40px 0 32px 21px;
+}
+
+.sidebar__languages .link {
+    padding-right: 6px;
+}
+
+.sidebar__languages .link:first-child {
+    color: var(--grey);
+}
