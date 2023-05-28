@@ -1,0 +1,29 @@
+@charset "UTF-8";
+:root {
+  --white: #FFFFFF;
+  --black: #1B1C21;
+  --grey: #7E7E82;
+  --light-gray: #EAEAEA;
+  --pink: #FF3E79;
+  --turquoise: #41F6D7;
+  --light-turquoise: #B8FFEC;
+  --background: #F8F8F8; }
+
+@font-face {
+  font-family: 'TT-Lakes Regular';
+  src: url("../fonts/TTLakes-Regular.ttf"); }
+
+/*TT-Lakes Bold*/
+@font-face {
+  font-family: 'TT-Lakes Bold';
+  src: url("../fonts/TTLakes-Bold.ttf"); }
+
+/*ШРИФТЫ*/
+.small-font {
+  font-size: 12px; }
+
+.medium-font {
+  font-size: 14px; }
+
+.biggest-font {
+  font-size: 16px; }
